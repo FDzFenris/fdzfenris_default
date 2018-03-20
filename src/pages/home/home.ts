@@ -1,10 +1,10 @@
 import {Component} from "@angular/core";
 import {NavController, PopoverController} from "ionic-angular";
-
+import {TripsPage} from "../trips/trips";
 /* 
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
-import {TripsPage} from "../trips/trips";
+
 import {SearchLocationPage} from "../search-location/search-location"; */
 
 
@@ -29,7 +29,7 @@ export class HomePage {
 
   // go to result page
   doSearch() {
-   /*  this.nav.push(TripsPage); */
+   this.nav.push(TripsPage);
   }
 
   // choose place

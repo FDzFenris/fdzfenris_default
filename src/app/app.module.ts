@@ -22,7 +22,11 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { TripsPage } from "../pages/trips/trips";
 
+
+
+import { TripService } from "../services/trip-service";
 @NgModule({
   declarations: [
     MyApp,
@@ -31,6 +35,7 @@ import { RegisterPage } from '../pages/register/register';
     HomePage,
     LoginPage,
     RegisterPage,
+    TripsPage,
     TabsPage
   ],
   imports: [
@@ -47,11 +52,13 @@ import { RegisterPage } from '../pages/register/register';
     HomePage,
     LoginPage,
     RegisterPage,
+    TripsPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    TripService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
