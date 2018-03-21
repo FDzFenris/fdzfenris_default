@@ -16,4 +16,8 @@ export class TabsPage {
   constructor() {
 
   }
+  select_page(){
+
+    return ContactPage;
+  }
 }

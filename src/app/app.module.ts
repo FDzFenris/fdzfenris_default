@@ -24,7 +24,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { TripsPage } from "../pages/trips/trips";
 
-
+import { TripDetailPage } from "../pages/trip-detail/trip-detail";
 
 import { TripService } from "../services/trip-service";
 @NgModule({
@@ -36,6 +36,7 @@ import { TripService } from "../services/trip-service";
     LoginPage,
     RegisterPage,
     TripsPage,
+    TripDetailPage,
     TabsPage
   ],
   imports: [
@@ -53,6 +54,7 @@ import { TripService } from "../services/trip-service";
     LoginPage,
     RegisterPage,
     TripsPage,
+    TripDetailPage,
     TabsPage
   ],
   providers: [
