@@ -8,7 +8,7 @@ import { LoginPage } from '../pages/login/login';
 
 import { HomePage } from "../pages/home/home";
 import { TripsPage } from "../pages/trips/trips";
-
+import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 
 export interface MenuItem {
   title: string;
@@ -39,7 +39,7 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: TabsPage, icon: 'home'},
-      {title: 'link2', component: TabsPage, icon: 'contacts'},
+      {title: 'TripsPage', component: LocalWeatherPage, icon: 'contacts'},
      /*  {title: 'Local Weather', component: LocalWeatherPage, icon: 'partly-sunny'} */
     ];
   }

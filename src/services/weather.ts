@@ -11,6 +11,8 @@ export class WeatherProvider {
   constructor(public http: HttpClient) {
     console.log('Hello WeatherProvider Provider');
     this.url = 'http://api.wunderground.com/api/'+ this.apiKey +'/conditions/q/'
+   // this.url = 'http://api.wunderground.com/api/1e4a0bdb251c64e4/geolookup/q/autoip.json'
+    
   }
 
   getWeather(state, city) {

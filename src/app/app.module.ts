@@ -26,7 +26,13 @@ import { TripsPage } from "../pages/trips/trips";
 
 import { TripDetailPage } from "../pages/trip-detail/trip-detail";
 
+import {LocalWeatherPage} from "../pages/local-weather/local-weather";
+
+
 import { TripService } from "../services/trip-service";
+import {WeatherProvider} from "../services/weather";
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -37,6 +43,7 @@ import { TripService } from "../services/trip-service";
     RegisterPage,
     TripsPage,
     TripDetailPage,
+    LocalWeatherPage,
     TabsPage
   ],
   imports: [
@@ -55,12 +62,14 @@ import { TripService } from "../services/trip-service";
     RegisterPage,
     TripsPage,
     TripDetailPage,
+    LocalWeatherPage,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     TripService,
+    WeatherProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
